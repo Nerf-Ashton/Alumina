@@ -1,0 +1,10 @@
+{
+  "item.alumina.rhodium_ingot": "Rhodium Ingot",
+  "item.alumina.iridium_ingot": "Iridium Ingot",
+
+  "block.alumina.stainless_steel_casing": "Stainless Steel Casing",
+  "block.alumina.hastelloy_casing": "Hastelloy Casing",
+
+  "creativetab.alumina.items_tab": "Alumina Items",
+  "creativetab.alumina.blocks_tab": "Alumina Blocks"
+}
