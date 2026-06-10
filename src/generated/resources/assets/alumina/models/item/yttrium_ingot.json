@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "alumina:item/gallium_blingort"
+    "layer0": "alumina:item/yttrium_ingot"
   }
 }

@@ -13,9 +13,6 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Alumina.MOD_ID);
     public static final ArrayList<DeferredItem<Item>> REGISTERED_METALS = new ArrayList<>();
 
-    /*public static final DeferredItem<Item> RHODIUM_INGOT = ITEMS.register("rhodium_ingot",
-            () -> new Item(new Item.Properties()));*/
-
     public static void createIngots() {
         ArrayList<String> metals = MetallicEnum.getMetals();
         for (String name : metals) {

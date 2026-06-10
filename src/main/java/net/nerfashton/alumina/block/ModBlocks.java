@@ -19,12 +19,12 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STAINLESS_STEEL_CASING = registerBlock("stainless_steel_casing",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.METAL)
-                    .strength(4f)
+                    .strength(2f)
             ));
     public static final DeferredBlock<Block> HASTELLOY_CASING = registerBlock("hastelloy_casing",
             () -> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.METAL)
-                    .strength(5f)
+                    .strength(2f)
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
