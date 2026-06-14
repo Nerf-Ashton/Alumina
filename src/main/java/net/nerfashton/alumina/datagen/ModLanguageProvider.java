@@ -16,7 +16,7 @@ public class ModLanguageProvider extends LanguageProvider {
         for (var item : ModItems.REGISTERED_ELEMENTS) {
             add(item.get(), makeHumanReadable(item.getRegisteredName()));
         }
-        add(ModItems.GAS_TANK.get(), makeHumanReadable(ModItems.GAS_TANK.getRegisteredName()));
+        add(ModItems.RADON_GAS_TANK.get(), makeHumanReadable(ModItems.RADON_GAS_TANK.getRegisteredName()));
 
         add(ModBlocks.HASTELLOY_CASING.get(), makeHumanReadable(ModBlocks.HASTELLOY_CASING.getRegisteredName()));
         add(ModBlocks.STAINLESS_STEEL_CASING.get(), makeHumanReadable(ModBlocks.STAINLESS_STEEL_CASING.getRegisteredName()));

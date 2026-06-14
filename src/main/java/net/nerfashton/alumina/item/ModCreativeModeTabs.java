@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         for (var item : ModItems.REGISTERED_ELEMENTS) {
                             output.accept(item.get());
                             }
+                        output.accept(ModItems.RADON_GAS_TANK);
                         output.accept(ModItems.GAS_TANK);
                     }).build());
 

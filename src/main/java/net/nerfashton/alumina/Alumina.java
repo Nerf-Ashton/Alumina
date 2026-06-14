@@ -4,6 +4,8 @@ import net.nerfashton.alumina.block.ModBlocks;
 import net.nerfashton.alumina.block.entity.ModBlockEntities;
 import net.nerfashton.alumina.fluid.ModFluidTypes;
 import net.nerfashton.alumina.fluid.ModFluids;
+import net.nerfashton.alumina.gas.ModGasTypes;
+import net.nerfashton.alumina.gas.ModGasses;
 import net.nerfashton.alumina.item.ModCreativeModeTabs;
 import net.nerfashton.alumina.item.ModItems;
 import org.slf4j.Logger;
@@ -46,6 +48,8 @@ public class Alumina {
 
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
+        ModGasTypes.register(modEventBus);
+        ModGasses.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
         // Register the item to a creative tab

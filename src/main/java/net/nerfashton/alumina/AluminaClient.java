@@ -18,6 +18,7 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.nerfashton.alumina.core.fluid.BaseFluidType;
 import net.nerfashton.alumina.fluid.ModFluidTypes;
+import net.nerfashton.alumina.gas.ModGasTypes;
 import org.joml.Vector3f;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
@@ -42,9 +43,11 @@ public class AluminaClient {
 
         BaseFluidType bromine = ModFluidTypes.BROMINE_FLUID_TYPE.get();
         BaseFluidType mercury = ModFluidTypes.MERCURY_FLUID_TYPE.get();
+        BaseFluidType radon = ModGasTypes.RADON_GAS_TYPE.get();
 
         registerNewFluidEvent(bromine, event);
         registerNewFluidEvent(mercury, event);
+        registerNewFluidEvent(radon, event);
 
         /*event.registerFluidType(new IClientFluidTypeExtensions() {
             @Override

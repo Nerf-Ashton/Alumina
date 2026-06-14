@@ -13,6 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nerfashton.alumina.Alumina;
 import net.nerfashton.alumina.block.custom.GasBurnerBlock;
 import net.nerfashton.alumina.fluid.ModFluids;
+import net.nerfashton.alumina.gas.ModGasses;
 import net.nerfashton.alumina.item.ModItems;
 
 import java.util.function.Supplier;
@@ -33,6 +34,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<GasBurnerBlock> GAS_BURNER = registerBlock("gas_burner",
             () -> new GasBurnerBlock(BlockBehaviour.Properties.of().noOcclusion().noLootTable()));
+
+
+    public static final DeferredBlock<LiquidBlock> RADON_GAS_BLOCK = BLOCKS.register("radon_gas",
+            () -> new LiquidBlock(ModGasses.SOURCE_RADON.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
 
     public static final DeferredBlock<LiquidBlock> BROMINE_FLUID_BLOCK = BLOCKS.register("bromine_fluid",
             () -> new LiquidBlock(ModFluids.SOURCE_BROMINE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
