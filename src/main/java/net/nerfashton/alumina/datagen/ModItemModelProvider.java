@@ -20,5 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 System.out.println(item.get() + " failed");
             }
         }
+        basicItem(ModItems.BROMINE_BUCKET.get());
+        basicItem(ModItems.MERCURY_BUCKET.get());
     }
 }
