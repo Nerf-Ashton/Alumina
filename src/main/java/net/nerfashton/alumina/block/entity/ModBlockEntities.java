@@ -12,11 +12,7 @@ import java.util.function.Supplier;
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, Alumina.MOD_ID);
-
-    public static final Supplier<BlockEntityType<GasBurnerBlockEntity>> GAS_BURNER_BE =
-            BLOCK_ENTITIES.register("gas_burner_be", () -> BlockEntityType.Builder.of(
-                    GasBurnerBlockEntity::new, ModBlocks.GAS_BURNER.get()).build(null));
-
+    //I don't have any block entities rn
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

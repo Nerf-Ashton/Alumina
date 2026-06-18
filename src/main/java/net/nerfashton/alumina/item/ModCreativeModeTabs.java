@@ -28,13 +28,11 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final Supplier<CreativeModeTab> BLOCKS_TAB = CREATIVE_MODE_TAB.register("blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.HASTELLOY_CASING))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.REGISTERED_ELEMENTS.get(4).get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(Alumina.MOD_ID, "items_tab"))
                     .title(Component.translatable("creativetab.alumina.blocks_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.HASTELLOY_CASING);
-                        output.accept(ModBlocks.STAINLESS_STEEL_CASING);
-                        output.accept(ModBlocks.GAS_BURNER);
+                        //output.accept(ModBlocks.NAME);
                     }).build());
 
     public static void register(IEventBus eventBus) {

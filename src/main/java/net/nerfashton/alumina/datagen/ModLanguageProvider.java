@@ -18,8 +18,7 @@ public class ModLanguageProvider extends LanguageProvider {
         }
         add(ModItems.RADON_GAS_TANK.get(), makeHumanReadable(ModItems.RADON_GAS_TANK.getRegisteredName()));
 
-        add(ModBlocks.HASTELLOY_CASING.get(), makeHumanReadable(ModBlocks.HASTELLOY_CASING.getRegisteredName()));
-        add(ModBlocks.STAINLESS_STEEL_CASING.get(), makeHumanReadable(ModBlocks.STAINLESS_STEEL_CASING.getRegisteredName()));
+        //add(ModBlocks.HASTELLOY_CASING.get(), makeHumanReadable(ModBlocks.HASTELLOY_CASING.getRegisteredName()));
 
         add("creativetab.alumina.items_tab", "Alumina Items");
         add("creativetab.alumina.blocks_tab", "Alumina Blocks");

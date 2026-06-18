@@ -73,11 +73,11 @@ public enum MetallicEnum {
     YTTERBIUM,
     YTTRIUM,
     //ZINC,
-    ZIRCONIUM,
+    ZIRCONIUM;
 
-    //Alloys
-    HASTELLOY,
-    STAINLESS_STEEL;
+    //Alloys - probably won't be a part of Alumina, but maybe...
+    //HASTELLOY,
+    //STAINLESS_STEEL;
 
 
     public static ArrayList<String> getMetals() {

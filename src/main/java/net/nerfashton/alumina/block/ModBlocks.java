@@ -11,7 +11,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nerfashton.alumina.Alumina;
-import net.nerfashton.alumina.block.custom.GasBurnerBlock;
 import net.nerfashton.alumina.fluid.ModFluids;
 import net.nerfashton.alumina.gas.ModGasses;
 import net.nerfashton.alumina.item.ModItems;
@@ -20,21 +19,6 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Alumina.MOD_ID);
-
-    public static final DeferredBlock<Block> STAINLESS_STEEL_CASING = registerBlock("stainless_steel_casing",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL)
-                    .strength(2f)
-            ));
-    public static final DeferredBlock<Block> HASTELLOY_CASING = registerBlock("hastelloy_casing",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL)
-                    .strength(2f)
-            ));
-
-    public static final DeferredBlock<GasBurnerBlock> GAS_BURNER = registerBlock("gas_burner",
-            () -> new GasBurnerBlock(BlockBehaviour.Properties.of().noOcclusion().noLootTable()));
-
 
     public static final DeferredBlock<LiquidBlock> RADON_GAS_BLOCK = BLOCKS.register("radon_gas",
             () -> new LiquidBlock(ModGasses.SOURCE_RADON.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));

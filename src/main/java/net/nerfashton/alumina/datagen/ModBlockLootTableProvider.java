@@ -16,8 +16,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        dropSelf(ModBlocks.HASTELLOY_CASING.get());
-        dropSelf(ModBlocks.STAINLESS_STEEL_CASING.get());
+        //dropSelf(ModBlocks.HASTELLOY_CASING.get());
     }
 
     @Override

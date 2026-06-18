@@ -14,8 +14,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.HASTELLOY_CASING);
-        blockWithItem(ModBlocks.STAINLESS_STEEL_CASING);
+        //blockWithItem(ModBlocks.HASTELLOY_CASING);
     }
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
